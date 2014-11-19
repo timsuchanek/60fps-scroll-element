@@ -7,6 +7,11 @@ does. But there were some points to create an own little lib:
   2. It was on bower. I'm using webpack, where bower doesn't work great.
   3. I needed it right now. Maybe later we can merge it.
 
+## Usage
+```js
+  require('60fps-scroll-element')(document.querySelector('.my-class'));
+```
+
 ## Credits
 100% Credits to [Ryan Seddon](http://www.thecssninja.com/javascript/follow-up-60fps-scroll)
 
