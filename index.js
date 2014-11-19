@@ -6,7 +6,7 @@ if (typeof document.addEventListener !== 'function') {
 }
 
 module.exports = function(ele) {
-    ele.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
         if(!support) {
             throw new Error('We\'re not in the browser doesnt exist');
         }
@@ -33,7 +33,7 @@ module.exports = function(ele) {
         ].join('');
         body.appendChild(cover);
 
-        window.addEventListener('scroll', function scroll() {
+        ele.addEventListener('scroll', function scroll() {
             if(!scrollStarted) {
                 coverStyle.pointerEvents = 'auto';
                 scrollStarted = true;
