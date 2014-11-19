@@ -1,6 +1,6 @@
 {
   "name": "60fps-scroll-element",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fastening scrolling of an element",
   "main": "index.js",
   "scripts": {
